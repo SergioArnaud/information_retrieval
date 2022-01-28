@@ -1,5 +1,6 @@
 # model folders
-semantic_model_model/**
+**/models/**
+semantic_search_model/**
 cross_encoder/**
 
 
