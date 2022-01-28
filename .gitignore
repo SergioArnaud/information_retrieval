@@ -3,6 +3,8 @@
 semantic_search_model/**
 cross_encoder/**
 
+# data folder
+data/**
 
 # Byte-compiled / optimized / DLL files
 .DS_Store

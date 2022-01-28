@@ -1,0 +1,4 @@
+torch==1.7.1
+sentence-transformers
+elasticsearch==7.14
+boto3
