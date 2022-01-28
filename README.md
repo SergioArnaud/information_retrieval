@@ -12,7 +12,15 @@ The following links explain a bit the idea of semantic search and how search mec
 There are two models trained for spanish, a bi-encoder and a cross-encoder. These serve to make the retrieval system using the retrieve and rerank idea:
 
 ```
-make download_models
+make setup
+pip install -r requirements.txt
+```
+
+
+## Basic usage
+
+```
+
 ```
 
 
