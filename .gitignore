@@ -1,4 +1,10 @@
+# model folders
+semantic_model_model/**
+cross_encoder/**
+
+
 # Byte-compiled / optimized / DLL files
+.DS_Store
 __pycache__/
 *.py[cod]
 *$py.class
