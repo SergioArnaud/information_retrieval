@@ -19,8 +19,29 @@ pip install -r requirements.txt
 
 ## Basic usage
 
+1. Setup Elasticsearch index with semantic vectors. For this step we supose that a set of json files is folder. Each json can contain several optional fields but need to contain id and text fiedlds. 
+```
+from information_retrieval import SemanticEmbedder, CrossEncoder, Prepare, Search
+
+data_folder = 'data/'
+text_field = "texto_parrafo"
+id_field = "id_parrafo"
+elastic_index_name = "sentencias_2.0"
+
+# Read the files, compute embeddings and upload them to elasticsearch
+P = Prepare(data_folder, text_field, id_field, elastic_index_name)
+P.prepare()
 ```
 
+2. Make queries to retrieve documents:
+```
+from information_retrieval import SearchEngine
+
+query = "la vida es bella"
+S = SearchEngine(elastic_index_name)
+S.retrieve(query) # Only semantic search
+
+S.rerank(query) # Retrieve and rerank
 ```
 
 
